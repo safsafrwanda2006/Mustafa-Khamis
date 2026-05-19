@@ -143,5 +143,15 @@
   .hero {
     padding-top: 25px;
   }
+  .btnPrimary{
+    padding: 20px 24px;
+    font-size: 0.875rem;
+    border-radius: 60px;
+  }
+  .btnSecondary{
+    padding: 20px 24px;
+    font-size: 0.875rem;
+    border-radius: 60px;
+  }
 
 }
