@@ -53,26 +53,30 @@
   padding: 16px 32px;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.2s;
 }
 
-.btnPrimary:hover { transform: translateY(-2px); }
+.btnPrimary:hover {
+  transform: translateY(-2px);
+}
 
 .btnSecondary {
   background: transparent;
   color: #ffffff;
   border: 1px solid var(--surface-border);
-  padding: 16px 32px;
+  padding: 16px 20px;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background 0.2s;
 }
 
-.btnSecondary:hover { background: var(--surface-color); }
+.btnSecondary:hover {
+  background: var(--surface-color);
+}
 
 .metrics {
   display: flex;
@@ -115,20 +119,29 @@
 .glowOverlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top right, rgba(37,99,235,0.2) 0%, transparent 60%);
+  background: radial-gradient(
+    circle at top right,
+    rgba(37, 99, 235, 0.2) 0%,
+    transparent 60%
+  );
   z-index: 1;
   pointer-events: none;
 }
 
 @media (max-width: 968px) {
-  .grid { grid-template-columns: 1fr; }
-  .title { font-size: 3rem; }
-  .imageWrapper { display: none; /* Keep mobile focused on conversion */ }
- 
-}
-@media (max-width:600px) {
-   .hero{
-    padding-top: 10px;
+  .grid {
+    grid-template-columns: 1fr;
   }
-  
+  .title {
+    font-size: 3rem;
+  }
+  .imageWrapper {
+    display: none; /* Keep mobile focused on conversion */
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 25px;
+  }
+
 }
