@@ -124,4 +124,11 @@
   .grid { grid-template-columns: 1fr; }
   .title { font-size: 3rem; }
   .imageWrapper { display: none; /* Keep mobile focused on conversion */ }
+ 
+}
+@media (max-width:600px) {
+   .hero{
+    padding-top: 10px;
+  }
+  
 }
